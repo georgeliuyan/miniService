@@ -1,2 +1,2 @@
-# miniservice
+# miniService
 serviceTest
