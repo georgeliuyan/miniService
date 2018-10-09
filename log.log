@@ -1,0 +1,7 @@
+2018-10-09 16:23:24  [ main:0 ] - [ INFO ]  Starting application on Admin-PC with PID 9492 (started by Admin in E:\1.工作内容\1.工作内容\1.工程项目\7.dh\code\miniService)
+2018-10-09 16:23:24  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-10-09 16:23:27  [ main:3592 ] - [ INFO ]  Context refreshed
+2018-10-09 16:23:27  [ main:3713 ] - [ INFO ]  Found 1 custom documentation plugin(s)
+2018-10-09 16:23:27  [ main:3720 ] - [ INFO ]  Scanning for api listing references
+2018-10-09 16:23:28  [ main:3860 ] - [ INFO ]  Started application in 4.145 seconds (JVM running for 4.561)
+2018-10-09 16:24:59  [ http-nio-18080-exec-3:95469 ] - [ INFO ]  从缓存中获取了用户！
