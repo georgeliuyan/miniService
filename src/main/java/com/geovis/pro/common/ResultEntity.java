@@ -1,6 +1,4 @@
-package com.geovis.pro.resultEntity;
-
-import com.geovis.pro.common.ResultCode;
+package com.geovis.pro.common;
 
 public class ResultEntity {
 	int code;

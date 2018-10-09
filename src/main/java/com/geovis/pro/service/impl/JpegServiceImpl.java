@@ -9,8 +9,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.geovis.pro.common.ResultEntity;
 import com.geovis.pro.model.JPEGModel;
-import com.geovis.pro.resultEntity.ResultEntity;
 import com.geovis.pro.service.JpegService;
 
 @Service

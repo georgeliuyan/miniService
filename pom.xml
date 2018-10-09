@@ -14,6 +14,33 @@
 	</parent>
 	
 	<dependencies>
+		<!-- log4j start -->
+		<!-- 忽略自带的日志框架. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!-- log4j. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-log4j</artifactId>
+			<version>1.2.8.RELEASE</version>
+		</dependency>
+		<!-- log4j end -->
+		
+		<!-- redis start -->
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+		<!-- redis end -->
+		
 		<!-- swagger start -->
 		<dependency>
 			<groupId>io.springfox</groupId>
