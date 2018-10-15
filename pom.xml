@@ -7,13 +7,36 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>miniService</name>
 	<url>http://maven.apache.org</url>
+	<!-- 配置基于maven仓库的依赖 -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.4.2.RELEASE</version>
 	</parent>
 	
+	<!-- 配置依赖本地路径下的依赖库 -->
+	<!-- <parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-dependencies</artifactId>
+		<version>1.4.2.RELEASE</version>
+		<relativePath>../../spring-boot-dependencies</relativePath>
+	</parent> -->
+	
 	<dependencies>
+		<!-- 数据库访问依赖 jpa start -->
+		<dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-data-jpa</artifactId>
+	    </dependency>
+		<!-- jpa end -->
+		
+		<!-- postgresql start -->
+		<dependency>  
+		    <groupId>org.postgresql</groupId>  
+		    <artifactId>postgresql</artifactId>
+		</dependency>
+		<!-- postgresql end -->
+		
 		<!-- log4j start -->
 		<!-- 忽略自带的日志框架. -->
 		<dependency>
@@ -68,26 +91,26 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
             <scope>provided</scope>
-        </dependency>
+        </dependency> -->
 		<!-- web应用层依赖  end -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
 			<scope>test</scope>
-		</dependency>
+		</dependency> -->
    		
    		<!-- 解决jsp报错 -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.0.1</version>
 			<scope>provided</scope>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 	<build>
 		<finalName>miniService</finalName>

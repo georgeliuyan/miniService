@@ -1,7 +1,35 @@
-2018-10-09 16:23:24  [ main:0 ] - [ INFO ]  Starting application on Admin-PC with PID 9492 (started by Admin in E:\1.工作内容\1.工作内容\1.工程项目\7.dh\code\miniService)
-2018-10-09 16:23:24  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
-2018-10-09 16:23:27  [ main:3592 ] - [ INFO ]  Context refreshed
-2018-10-09 16:23:27  [ main:3713 ] - [ INFO ]  Found 1 custom documentation plugin(s)
-2018-10-09 16:23:27  [ main:3720 ] - [ INFO ]  Scanning for api listing references
-2018-10-09 16:23:28  [ main:3860 ] - [ INFO ]  Started application in 4.145 seconds (JVM running for 4.561)
-2018-10-09 16:24:59  [ http-nio-18080-exec-3:95469 ] - [ INFO ]  从缓存中获取了用户！
+2018-10-11 16:58:11  [ main:0 ] - [ INFO ]  Starting application on Admin-PC with PID 9348 (started by Admin in E:\1.工作内容\1.工作内容\1.工程项目\7.dh\code\miniService)
+2018-10-11 16:58:11  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-10-11 16:58:15  [ main:3978 ] - [ INFO ]  Context refreshed
+2018-10-11 16:58:15  [ main:4089 ] - [ INFO ]  Found 1 custom documentation plugin(s)
+2018-10-11 16:58:15  [ main:4095 ] - [ INFO ]  Scanning for api listing references
+2018-10-11 16:58:16  [ main:4235 ] - [ INFO ]  Started application in 4.53 seconds (JVM running for 5.119)
+2018-10-11 17:06:03  [ main:0 ] - [ INFO ]  Starting application on Admin-PC with PID 8680 (started by Admin in E:\1.工作内容\1.工作内容\1.工程项目\7.dh\code\miniService)
+2018-10-11 17:06:03  [ main:1 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-10-11 17:06:10  [ main:7017 ] - [ INFO ]  Context refreshed
+2018-10-11 17:06:10  [ main:7036 ] - [ INFO ]  Found 1 custom documentation plugin(s)
+2018-10-11 17:06:10  [ main:7044 ] - [ INFO ]  Scanning for api listing references
+2018-10-11 17:06:10  [ main:7168 ] - [ INFO ]  Started application in 7.425 seconds (JVM running for 7.69)
+2018-10-15 10:39:09  [ main:0 ] - [ INFO ]  Starting application on Admin-PC with PID 3964 (started by Admin in E:\1.工作内容\1.工作内容\1.工程项目\7.dh\code\miniService)
+2018-10-15 10:39:09  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-10-15 10:39:15  [ main:5785 ] - [ INFO ]  Context refreshed
+2018-10-15 10:39:15  [ main:5822 ] - [ INFO ]  Found 1 custom documentation plugin(s)
+2018-10-15 10:39:15  [ main:5829 ] - [ INFO ]  Scanning for api listing references
+2018-10-15 10:43:28  [ main:0 ] - [ INFO ]  Starting application on Admin-PC with PID 5348 (started by Admin in E:\1.工作内容\1.工作内容\1.工程项目\7.dh\code\miniService)
+2018-10-15 10:43:28  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-10-15 10:43:33  [ main:4344 ] - [ INFO ]  Context refreshed
+2018-10-15 10:43:33  [ main:4362 ] - [ INFO ]  Found 1 custom documentation plugin(s)
+2018-10-15 10:43:33  [ main:4368 ] - [ INFO ]  Scanning for api listing references
+2018-10-15 10:43:36  [ main:7435 ] - [ INFO ]  Started application in 7.686 seconds (JVM running for 7.998)
+2018-10-15 10:53:48  [ main:0 ] - [ INFO ]  Starting application on Admin-PC with PID 10892 (started by Admin in E:\1.工作内容\1.工作内容\1.工程项目\7.dh\code\miniService)
+2018-10-15 10:53:48  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-10-15 10:53:52  [ main:4069 ] - [ INFO ]  Context refreshed
+2018-10-15 10:53:52  [ main:4086 ] - [ INFO ]  Found 1 custom documentation plugin(s)
+2018-10-15 10:53:52  [ main:4091 ] - [ INFO ]  Scanning for api listing references
+2018-10-15 10:53:52  [ main:4232 ] - [ INFO ]  Started application in 4.488 seconds (JVM running for 4.776)
+2018-10-15 11:11:01  [ main:0 ] - [ INFO ]  Starting application on Admin-PC with PID 7548 (started by Admin in E:\1.工作内容\1.工作内容\1.工程项目\7.dh\code\miniService)
+2018-10-15 11:11:01  [ main:1 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-10-15 11:11:05  [ main:4548 ] - [ INFO ]  Context refreshed
+2018-10-15 11:11:05  [ main:4563 ] - [ INFO ]  Found 1 custom documentation plugin(s)
+2018-10-15 11:11:05  [ main:4572 ] - [ INFO ]  Scanning for api listing references
+2018-10-15 11:11:05  [ main:4695 ] - [ INFO ]  Started application in 4.952 seconds (JVM running for 5.217)
