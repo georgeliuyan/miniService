@@ -97,6 +97,7 @@
             <scope>provided</scope>
         </dependency> -->
 		<!-- web应用层依赖  end -->
+		
 		<!-- <dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -111,6 +112,14 @@
 			<version>3.0.1</version>
 			<scope>provided</scope>
 		</dependency> -->
+		
+		<!-- springboot unit test start -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- springboot unit test end -->
 	</dependencies>
 	<build>
 		<finalName>miniService</finalName>
