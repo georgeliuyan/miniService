@@ -23,6 +23,13 @@
 	</parent> -->
 	
 	<dependencies>
+		<!-- 配置文件处理器 start -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<!-- 配置文件处理器 end -->
 		<!-- 数据库访问依赖 jpa start -->
 		<dependency>
 	        <groupId>org.springframework.boot</groupId>
