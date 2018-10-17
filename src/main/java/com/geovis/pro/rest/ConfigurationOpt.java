@@ -3,6 +3,7 @@ package com.geovis.pro.rest;
 import java.util.HashMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,10 +24,14 @@ public class ConfigurationOpt {
 	@Autowired
 	ApplicationProperties applicationProperties;
 	
+	@Value("${spring.datasource.url}")
+	private String DatabaseUrl;
+	
 	@ApiOperation(value = "getconfig", notes = "getconfig")
 	@GetMapping("/getconfig")
 	@ResponseBody
     public ResultEntity getConfig(){
+		System.out.println("DATABASE URL IS : "+DatabaseUrl);
 		return ResultEntity.success(applicationProperties);
     }
 
