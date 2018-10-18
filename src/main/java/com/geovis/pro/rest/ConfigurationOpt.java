@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.geovis.pro.common.ResultEntity;
 import com.geovis.pro.config.ApplicationProperties;
+import com.geovis.pro.config.LocalConfigProperties;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -24,6 +25,9 @@ public class ConfigurationOpt {
 	@Autowired
 	ApplicationProperties applicationProperties;
 	
+	@Autowired
+	LocalConfigProperties localConfigProperties;
+	
 	@Value("${spring.datasource.url}")
 	private String DatabaseUrl;
 	
@@ -34,5 +38,14 @@ public class ConfigurationOpt {
 		System.out.println("DATABASE URL IS : "+DatabaseUrl);
 		return ResultEntity.success(applicationProperties);
     }
+	
+	@ApiOperation(value = "getLocalConfig", notes = "getLocalConfig")
+	@GetMapping("/getLocalConfig")
+	@ResponseBody
+    public ResultEntity getLocalConfig(){
+		System.out.println("filename is : "+localConfigProperties.getFilename());
+		return ResultEntity.success(localConfigProperties.getFilename());
+    }
+
 
 }

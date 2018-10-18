@@ -9,10 +9,10 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix="server")
 public class ApplicationProperties {
 	
-	@NotNull
+//	@NotNull
 	public String port;
 	
-	@NotNull
+//	@NotNull
 	public String contextPath;
 	/*
 	 *  contextPath可以使用的属性名如下：
