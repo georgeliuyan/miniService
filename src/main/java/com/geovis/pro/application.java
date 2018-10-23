@@ -1,8 +1,6 @@
 package com.geovis.pro;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.cache.annotation.EnableCaching;
@@ -19,7 +17,7 @@ import org.springframework.cache.annotation.EnableCaching;
  * @Documented
  * @Inherited
  */
-@EnableCaching //缓存机制
+@EnableCaching //打开redis缓存机制，主要用于@Cacheable @CacheEvict等注释功能
 @ServletComponentScan
 public class application {
 	

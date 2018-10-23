@@ -3,6 +3,7 @@ package com.geovis.pro.rest;
 import javax.annotation.Resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,7 +27,6 @@ public class CacheableRest {
 	@Autowired
 	CacheableService cacheableService;
 	
-//	@Cacheable(value="UserCache")// 使用了一个缓存名叫 accountCache
 	@ApiOperation(value = "getCacheable", notes = "getCacheable")
 	@GetMapping("/getCacheable")
 	public ResultEntity getCacheable(@RequestParam(required = false) Long id) {  
@@ -35,6 +35,16 @@ public class CacheableRest {
 		System.out.println("into func getCacheable");
 		SysUserEntity user = cacheableService.queryById(id);
 	    return ResultEntity.success(user);
-	} 
-
+	}
+	
+	@ApiOperation(value = "deleteCacheable", notes = "deleteCacheable")
+	@CacheEvict(value = "SysUserEntity", key = "'SysUserEntity:'+#id")
+	@GetMapping("/deleteCacheable")
+	public ResultEntity deleteCacheable(@RequestParam(required = false) Long id) {  
+	     //这里不用写缓存的逻辑，直接按正常业务逻辑走即可，
+	     //缓存通过切面自动切入  
+		System.out.println("into func deleteCacheable");
+//		SysUserEntity user = cacheableService.queryById(id);
+	    return ResultEntity.success(id);
+	}
 }
