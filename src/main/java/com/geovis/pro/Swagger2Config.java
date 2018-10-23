@@ -27,7 +27,7 @@ public class Swagger2Config {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo()).select()
                 //扫描指定包中的swagger注解
-                //.apis(RequestHandlerSelectors.basePackage("com.geovis.pro.rest"))
+                .apis(RequestHandlerSelectors.basePackage("com.geovis.pro.rest"))
                 //扫描所有有注解的api，用这种方式更灵活
                 .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
                 .paths(PathSelectors.any())
@@ -38,8 +38,8 @@ public class Swagger2Config {
         return new ApiInfoBuilder()
                 .title("基础平台 RESTful APIs")
                 .description("基础平台 RESTful 风格的接口文档，内容详细，极大的减少了前后端的沟通成本，同时确保代码与文档保持高度一致，极大的减少维护文档的时间。")
-                .termsOfServiceUrl("http://xiachengwei5.coding.me")
-                .contact("Xia")
+                .termsOfServiceUrl("https://github.com/georgeliuyan/miniService")
+                .contact("LiuYan")
                 .version("1.0.0")
                 .build();
     }

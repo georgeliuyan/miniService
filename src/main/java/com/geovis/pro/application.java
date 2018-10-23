@@ -21,7 +21,6 @@ import org.springframework.cache.annotation.EnableCaching;
  */
 //@EnableCaching 缓存机制
 @ServletComponentScan
-@MapperScan("com.geovis.pro.dao")
 public class application {
 	
  	public static void main(String[] args) {
