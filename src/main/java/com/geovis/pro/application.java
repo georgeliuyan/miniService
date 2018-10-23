@@ -19,7 +19,7 @@ import org.springframework.cache.annotation.EnableCaching;
  * @Documented
  * @Inherited
  */
-//@EnableCaching 缓存机制
+@EnableCaching //缓存机制
 @ServletComponentScan
 public class application {
 	

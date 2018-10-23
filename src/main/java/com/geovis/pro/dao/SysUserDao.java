@@ -2,6 +2,8 @@ package com.geovis.pro.dao;
 
 import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.cache.annotation.Cacheable;
+
 import com.geovis.pro.model.SysUserEntity;
 
 @Mapper
@@ -14,4 +16,6 @@ public interface SysUserDao {
      */
     List<SysUserEntity> query(SysUserEntity user);
     List<SysUserEntity> queryAll();
+    SysUserEntity queryById(Long id);
+    
 }

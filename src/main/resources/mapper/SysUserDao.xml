@@ -36,4 +36,9 @@
         SELECT *
         FROM sys_user_entity
     </select>
+    
+    <select id="queryById" resultType="com.geovis.pro.model.SysUserEntity" parameterType="Long">
+        SELECT *
+        FROM sys_user_entity where id = #{id}
+    </select>
 </mapper>
