@@ -25,6 +25,7 @@ import io.swagger.annotations.ApiOperation;
 public class CacheableRest {
 	
 	@Autowired
+//	@Resource
 	CacheableService cacheableService;
 	
 	@ApiOperation(value = "getCacheable", notes = "getCacheable")
