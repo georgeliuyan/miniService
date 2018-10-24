@@ -1,5 +1,10 @@
 package com.geovis.pro;
 
+import java.util.Date;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
@@ -18,10 +23,20 @@ import org.springframework.cache.annotation.EnableCaching;
  * @Inherited
  */
 @EnableCaching //打开redis缓存机制，主要用于@Cacheable @CacheEvict等注释功能
-@ServletComponentScan
+//@ServletComponentScan
 public class application {
 	
  	public static void main(String[] args) {
  		SpringApplication.run(application.class, args);
+ 	}
+ 	
+ 	@PostConstruct
+ 	public void func1(){
+ 		System.out.println("[" + new Date()+"] start program ... ");
+ 	}
+ 	
+ 	@PreDestroy
+ 	public void func2(){
+ 		System.out.println("[" + new Date()+"] end program ... ");
  	}
 }

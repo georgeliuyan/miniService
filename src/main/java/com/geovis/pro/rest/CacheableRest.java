@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.geovis.pro.common.ResultEntity;
+import com.geovis.pro.common.ScopeEntity;
 import com.geovis.pro.model.SysUserEntity;
 import com.geovis.pro.service.CacheableService;
 
@@ -22,8 +23,7 @@ import io.swagger.annotations.ApiOperation;
 @Api("CacheableRest相关的api")
 public class CacheableRest {
 	
-//	@Autowired
-	@Resource
+	@Autowired
 	CacheableService cacheableService;
 	
 	@ApiOperation(value = "getCacheable", notes = "getCacheable")

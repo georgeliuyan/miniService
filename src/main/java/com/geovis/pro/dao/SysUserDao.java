@@ -3,6 +3,8 @@ package com.geovis.pro.dao;
 import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Repository;
 
 import com.geovis.pro.model.SysUserEntity;
 
