@@ -16,7 +16,7 @@ public class CacheableServiceImpl implements CacheableService {
     private SysUserDao userDao;
 	
 	@Override
-	@Cacheable(value = "SysUserEntity", key = "'SysUserEntity:'+#id", condition = "#id!=null")
+	@Cacheable(value = "SysUserEntity", key = "''+#id", condition = "#id!=null")
 //	@Cacheable(value = "SysUserEntity",key = "#id") //这样写redis中可能会有重复的key=id
 	public SysUserEntity queryById(Long id) {
 		System.out.println("search from database...");

@@ -4,15 +4,13 @@ import javax.annotation.Resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.Cacheable;
-import org.springframework.stereotype.Controller;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.geovis.pro.common.ResultEntity;
-import com.geovis.pro.dao.SysUserDao;
 import com.geovis.pro.model.SysUserEntity;
 import com.geovis.pro.service.CacheableService;
 
@@ -21,11 +19,11 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping("/rest")
-@Api("MybatisTest相关的api")
+@Api("CacheableRest相关的api")
 public class CacheableRest {
 	
-	@Autowired
-//	@Resource
+//	@Autowired
+	@Resource
 	CacheableService cacheableService;
 	
 	@ApiOperation(value = "getCacheable", notes = "getCacheable")
